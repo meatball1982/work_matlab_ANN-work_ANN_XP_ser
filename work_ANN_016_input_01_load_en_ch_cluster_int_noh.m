@@ -21,6 +21,8 @@ b=ind_at;
 
 Ind_noh=[];
 dia_noh=[];
+ang_noh=[];
+bod_noh=[];
 
 % choose bond length
 for i=2:23
@@ -28,16 +30,24 @@ for i=2:23
     ind2=a(i,2);
     tm=b(ind1)*b(ind1);
     Ind_noh=[Ind_noh,tm];
+    if tm~=0
+        bod_noh=[bod_noh;ind1,ind2];
+    end
 end
 % ind_noh
 
 % choose bond angle
+con_ang=0;
 for i=3:23
     ind1=a(i,1);
     ind2=a(i,2);
     ind3=a(i,3);
     tm=b(ind1)*b(ind2)*b(ind3);
     Ind_noh=[Ind_noh,tm];
+    if tm~=0
+        con_ang=con_ang+1;
+        ang_noh=[ang_noh;ind1,ind2,ind3];
+    end
 end
 % ind_noh
 
