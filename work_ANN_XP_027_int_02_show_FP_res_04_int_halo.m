@@ -44,7 +44,7 @@ view(mm_vw)
 % fi_na=['../imgs/en/27_int_dia_input_en/result_ann_halo/fig_FP_res_ann_tr_data_part'];
 % fi_na=['../imgs/en/27_int_dia_input_en/result_ann_halo/fig_FP_res_ann_tr_data'];
 
-fun_work_li_035_myfig_out(h,fi_na,3)
+% fun_work_li_035_myfig_out(h,fi_na,3)
 % 
 k=caxis;
 % 
